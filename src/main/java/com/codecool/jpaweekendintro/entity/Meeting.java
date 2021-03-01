@@ -22,6 +22,6 @@ public class Meeting {
     LocalDate date;
     String description;
 
-    @ManyToMany(cascade = CascadeType.PERSIST)
+    @ManyToMany(cascade = CascadeType.ALL)
     private Collection<Participant> participantCollection;
 }
